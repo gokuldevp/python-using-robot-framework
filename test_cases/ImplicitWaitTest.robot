@@ -16,6 +16,14 @@ Test speed
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
 
+    ${implicittime}    Get Selenium Implicit Wait
+    Log To Console    ${implicittime}
+
+    Set Selenium Implicit Wait    10seconds    #wait for the all elements to apper for 10seconds
+
+    ${implicittime}    Get Selenium Implicit Wait
+    Log To Console    ${implicittime} 
+
     Select Radio Button    Gender    M
     Input Text    id:FirstName    ttpvt
     Input Text    id:LastName    gokul
