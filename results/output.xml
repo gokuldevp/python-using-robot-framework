@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230710 17:34:11.640" rpa="false" schemaversion="3">
+<suite id="s1" name="Robotvscode" source="D:\Web Automation using Robot Framework\robotvscode">
+<suite id="s1-s1" name="Test Cases" source="D:\Web Automation using Robot Framework\robotvscode\test_cases">
+<suite id="s1-s1-s1" name="waitsTimeout" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\waitsTimeout.robot">
+<test id="s1-s1-s1-t1" name="Test speed" line="15">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230710 17:34:12.089" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20230710 17:34:12.082" endtime="20230710 17:34:15.607"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230710 17:34:15.607" endtime="20230710 17:34:15.731"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230710 17:34:15.731" endtime="20230710 17:34:15.763"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230710 17:34:15.763" endtime="20230710 17:34:15.763"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Registerion</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20230710 17:34:25.980" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230710 17:34:25.980" level="FAIL">Text 'Registerion' did not appear in 10 seconds.</msg>
+<status status="FAIL" starttime="20230710 17:34:15.763" endtime="20230710 17:34:25.980"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.980" endtime="20230710 17:34:25.980"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<arg>ttpvt</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.996" endtime="20230710 17:34:25.996"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:LastName</arg>
+<arg>gokul</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.996" endtime="20230710 17:34:25.996"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>ttpvt_gd01@yopmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.996" endtime="20230710 17:34:25.996"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Ttpvt_gd01@yopmail.com</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.996" endtime="20230710 17:34:25.996"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<arg>Ttpvt_gd01@yopmail.com</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.996" endtime="20230710 17:34:25.996"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230710 17:34:25.996" endtime="20230710 17:34:25.996"/>
+</kw>
+<status status="FAIL" starttime="20230710 17:34:12.082" endtime="20230710 17:34:25.996">Text 'Registerion' did not appear in 10 seconds.</status>
+</test>
+<status status="FAIL" starttime="20230710 17:34:11.699" endtime="20230710 17:34:25.996"/>
+</suite>
+<status status="FAIL" starttime="20230710 17:34:11.689" endtime="20230710 17:34:26.012"/>
+</suite>
+<status status="FAIL" starttime="20230710 17:34:11.649" endtime="20230710 17:34:26.012"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robotvscode">Robotvscode</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Cases">Robotvscode.Test Cases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="waitsTimeout">Robotvscode.Test Cases.waitsTimeout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
