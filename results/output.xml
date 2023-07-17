@@ -1,74 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230717 12:25:21.419" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230717 14:53:27.247" rpa="false" schemaversion="3">
 <suite id="s1" name="Robotvscode" source="D:\Web Automation using Robot Framework\robotvscode">
 <suite id="s1-s1" name="Test Cases" source="D:\Web Automation using Robot Framework\robotvscode\test_cases">
-<suite id="s1-s1-s1" name="closeAll" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\closeAll.robot">
-<test id="s1-s1-s1-t1" name="Testing Closing All" line="15">
+<suite id="s1-s1-s1" name="Alert" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\alert.robot">
+<test id="s1-s1-s1-t1" name="Testing Alerts Handling" line="21">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url1}</arg>
+<arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230717 12:25:21.801" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20230717 12:25:21.801" endtime="20230717 12:25:27.492"/>
+<msg timestamp="20230717 14:53:27.595" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20230717 14:53:27.595" endtime="20230717 14:53:36.553"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230717 12:25:27.492" endtime="20230717 12:25:27.622"/>
+<status status="PASS" starttime="20230717 14:53:36.553" endtime="20230717 14:53:36.676"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url2}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230717 12:25:27.622" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
-<status status="PASS" starttime="20230717 12:25:27.622" endtime="20230717 12:25:33.421"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionAlert()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230717 14:53:36.676" level="INFO">Clicking button 'xpath://button[@onclick='myFunctionAlert()']'.</msg>
+<status status="PASS" starttime="20230717 14:53:36.676" endtime="20230717 14:53:36.806"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230717 12:25:33.421" endtime="20230717 12:25:33.551"/>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230717 14:53:36.806" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230717 14:53:36.806" endtime="20230717 14:53:36.815"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url3}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230717 12:25:33.559" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
-<status status="PASS" starttime="20230717 12:25:33.551" endtime="20230717 12:25:38.101"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionConfirm()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230717 14:53:36.815" level="INFO">Clicking button 'xpath://button[@onclick='myFunctionConfirm()']'.</msg>
+<status status="PASS" starttime="20230717 14:53:36.815" endtime="20230717 14:53:36.938"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230717 12:25:38.101" endtime="20230717 12:25:38.214"/>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>DISMISS</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230717 14:53:36.946" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230717 14:53:36.938" endtime="20230717 14:53:36.946"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230717 12:25:38.214" endtime="20230717 12:25:40.361"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionPrompt()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230717 14:53:36.954" level="INFO">Clicking button 'xpath://button[@onclick='myFunctionPrompt()']'.</msg>
+<status status="PASS" starttime="20230717 14:53:36.946" endtime="20230717 14:53:37.044"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230717 12:25:43.365" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230717 12:25:40.361" endtime="20230717 12:25:43.365"/>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>LEAVE</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230717 14:53:37.044" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230717 14:53:37.044" endtime="20230717 14:53:37.044"/>
 </kw>
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230717 12:25:43.365" endtime="20230717 12:25:55.745"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@onclick='myFunctionConfirm()']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230717 14:53:37.052" level="INFO">Clicking button 'xpath://button[@onclick='myFunctionConfirm()']'.</msg>
+<msg timestamp="20230717 14:53:37.239" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230717 14:53:37.239" level="FAIL">UnexpectedAlertPresentException: Alert Text: Please enter your name:
+Message: unexpected alert open: {Alert text : Please enter your name:}
+  (Session info: chrome=114.0.5735.199)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0095A813+48355]
+	(No symbol) [0x008EC4B1]
+	(No symbol) [0x007F5358]
+	(No symbol) [0x0084CDAD]
+	(No symbol) [0x0083A536]
+	(No symbol) [0x008182DC]
+	(No symbol) [0x008193DD]
+	GetHandleVerifier [0x00BBAABD+2539405]
+	GetHandleVerifier [0x00BFA78F+2800735]
+	GetHandleVerifier [0x00BF456C+2775612]
+	GetHandleVerifier [0x009E51E0+616112]
+	(No symbol) [0x008F5F8C]
+	(No symbol) [0x008F2328]
+	(No symbol) [0x008F240B]
+	(No symbol) [0x008E4FF7]
+	BaseThreadInitThunk [0x76147D59+25]
+	RtlInitializeExceptionChain [0x7780B79B+107]
+	RtlClearBits [0x7780B71F+191]
+</msg>
+<status status="FAIL" starttime="20230717 14:53:37.052" endtime="20230717 14:53:37.255"/>
 </kw>
-<status status="PASS" starttime="20230717 12:25:21.801" endtime="20230717 12:25:55.745"/>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>Press a button!</arg>
+<arg>ACCEPT</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="NOT RUN" starttime="20230717 14:53:37.255" endtime="20230717 14:53:37.255"/>
+</kw>
+<status status="FAIL" starttime="20230717 14:53:27.587" endtime="20230717 14:53:37.255">UnexpectedAlertPresentException: Alert Text: Please enter your name:
+Message: unexpected alert open: {Alert text : Please enter your name:}
+  (Session info: chrome=114.0.5735.199)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0095A813+48355]
+	(No symbol) [0x008EC4B1]
+	(No symbol) [0x007F5358]
+	(No symbol) [0x0084CDAD]
+	(No symbol) [0x0083A536]
+	(No symbol) [0x008182DC]
+	(No symbol) [0x008193DD]
+	GetHandleVerifier [0x00BBAABD+2539405]
+	GetHandleVerifier [0x00BFA78F+2800735]
+	GetHandleVerifier [0x00BF456C+2775612]
+	GetHandleVerifier [0x009E51E0+616112]
+	(No symbol) [0x008F5F8C]
+	(No symbol) [0x008F2328]
+	(No symbol) [0x008F240B]
+	(No symbol) [0x008E4FF7]
+	BaseThreadInitThunk [0x76147D59+25]
+	RtlInitializeExceptionChain [0x7780B79B+107]
+	RtlClearBits [0x7780B71F+191]
+</status>
 </test>
-<status status="PASS" starttime="20230717 12:25:21.467" endtime="20230717 12:25:55.745"/>
+<status status="FAIL" starttime="20230717 14:53:27.296" endtime="20230717 14:53:37.263"/>
 </suite>
-<status status="PASS" starttime="20230717 12:25:21.459" endtime="20230717 12:25:55.753"/>
+<status status="FAIL" starttime="20230717 14:53:27.296" endtime="20230717 14:53:37.263"/>
 </suite>
-<status status="PASS" starttime="20230717 12:25:21.427" endtime="20230717 12:25:55.753"/>
+<status status="FAIL" starttime="20230717 14:53:27.255" endtime="20230717 14:53:37.271"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Robotvscode">Robotvscode</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Cases">Robotvscode.Test Cases</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="closeAll">Robotvscode.Test Cases.closeAll</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robotvscode">Robotvscode</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Cases">Robotvscode.Test Cases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Alert">Robotvscode.Test Cases.Alert</stat>
 </suite>
 </statistics>
 <errors>
