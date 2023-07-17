@@ -2,7 +2,7 @@
 # 1. Frame Should Contain - the keyword to check if a frame contains specific content is Frame Should Contain.
 # eg "Frame Should Contain    locator    text"
 
-# 2. Select Frame    - the keyword is used to access content inside a frame
+# 2. Select Frame    - the keyword is used to access content inside a iframe
 # eg: Select Frame    locator
 
 # 3. Unselect Frame    - the keyword is used to comeout of current iframe
@@ -35,6 +35,7 @@ Test iFrame Handler
     Current Frame Should Not Contain    gokul    #Verify if the current frame don't contain the text gokul
 
     Unselect Frame    #close current iframe
-        
+
+    Current Frame Should Contain    Date:    #we can use this to check if a perticular test is there in the main page    
 
 *** Keywords ***

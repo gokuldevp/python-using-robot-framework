@@ -1,59 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230717 17:16:20.332" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230717 17:51:28.095" rpa="false" schemaversion="3">
 <suite id="s1" name="Robotvscode" source="D:\Web Automation using Robot Framework\robotvscode">
 <suite id="s1-s1" name="Test Cases" source="D:\Web Automation using Robot Framework\robotvscode\test_cases">
-<suite id="s1-s1-s1" name="handleiFrame" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\handleiFrame.robot">
-<test id="s1-s1-s1-t1" name="Test iFrame Handler" line="13">
+<suite id="s1-s1-s1" name="handleTabWindows" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\handleTabWindows.robot">
+<test id="s1-s1-s1-t1" name="Test handle Tabbed Windows" line="11">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230717 17:16:20.567" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20230717 17:16:20.566" endtime="20230717 17:16:28.671"/>
+<msg timestamp="20230717 17:51:28.395" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20230717 17:51:28.394" endtime="20230717 17:51:32.555"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230717 17:16:28.672" endtime="20230717 17:16:28.786"/>
+<status status="PASS" starttime="20230717 17:51:32.555" endtime="20230717 17:51:32.693"/>
 </kw>
-<kw name="Frame Should Contain" library="SeleniumLibrary">
-<arg>id:frame-one796456169</arg>
-<arg>Name:</arg>
-<doc>Verifies that frame identified by ``locator`` contains ``text``.</doc>
-<msg timestamp="20230717 17:16:28.824" level="INFO">Searching for text from frame 'id:frame-one796456169'.</msg>
-<msg timestamp="20230717 17:16:28.840" level="INFO">Frame 'id:frame-one796456169' contains text 'Name:'.</msg>
-<status status="PASS" starttime="20230717 17:16:28.788" endtime="20230717 17:16:28.841"/>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230717 17:51:32.694" endtime="20230717 17:51:32.694"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>id:frame-one796456169</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20230717 17:16:28.843" level="INFO">Selecting frame 'id:frame-one796456169'.</msg>
-<status status="PASS" starttime="20230717 17:16:28.841" endtime="20230717 17:16:28.870"/>
+<kw name="Get Window Identifiers" library="SeleniumLibrary">
+<var>${main_window}</var>
+<doc>Returns and logs id attributes of all windows of the selected browser.</doc>
+<msg timestamp="20230717 17:51:40.778" level="INFO">Altogether 1 item.
+1: undefined</msg>
+<msg timestamp="20230717 17:51:40.778" level="INFO">${main_window} = ['undefined']</msg>
+<status status="PASS" starttime="20230717 17:51:32.695" endtime="20230717 17:51:40.778"/>
 </kw>
-<kw name="Current Frame Should Contain" library="SeleniumLibrary">
-<arg>Genter:</arg>
-<doc>Verifies that the current frame contains ``text``.</doc>
-<msg timestamp="20230717 17:16:29.003" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230717 17:16:29.004" level="FAIL">Frame should have contained text 'Genter:' but did not.</msg>
-<status status="FAIL" starttime="20230717 17:16:28.870" endtime="20230717 17:16:29.009"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="Tabbed"]/a/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230717 17:51:40.778" level="INFO">Clicking button 'xpath://*[@id="Tabbed"]/a/button'.</msg>
+<status status="PASS" starttime="20230717 17:51:40.778" endtime="20230717 17:51:45.904"/>
 </kw>
-<status status="FAIL" starttime="20230717 17:16:20.564" endtime="20230717 17:16:29.010">Frame should have contained text 'Genter:' but did not.</status>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${main_window}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230717 17:51:45.905" endtime="20230717 17:51:48.942"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230717 17:51:53.954" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230717 17:51:48.943" endtime="20230717 17:51:53.954"/>
+</kw>
+<status status="PASS" starttime="20230717 17:51:28.393" endtime="20230717 17:51:53.954"/>
 </test>
-<status status="FAIL" starttime="20230717 17:16:20.367" endtime="20230717 17:16:29.012"/>
+<status status="PASS" starttime="20230717 17:51:28.147" endtime="20230717 17:51:53.957"/>
 </suite>
-<status status="FAIL" starttime="20230717 17:16:20.363" endtime="20230717 17:16:29.014"/>
+<status status="PASS" starttime="20230717 17:51:28.137" endtime="20230717 17:51:53.957"/>
 </suite>
-<status status="FAIL" starttime="20230717 17:16:20.338" endtime="20230717 17:16:29.017"/>
+<status status="PASS" starttime="20230717 17:51:28.100" endtime="20230717 17:51:53.957"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Robotvscode">Robotvscode</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Cases">Robotvscode.Test Cases</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="handleiFrame">Robotvscode.Test Cases.handleiFrame</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robotvscode">Robotvscode</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Cases">Robotvscode.Test Cases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="handleTabWindows">Robotvscode.Test Cases.handleTabWindows</stat>
 </suite>
 </statistics>
 <errors>
