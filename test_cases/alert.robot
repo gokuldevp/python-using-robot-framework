@@ -21,7 +21,7 @@ ${url}    https://testautomationpractice.blogspot.com/
 Testing Alerts Handling
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
-    # Set Selenium Speed    1seconds
+    Set Selenium Speed    1seconds
 
     Click Button    xpath://button[@onclick='myFunctionAlert()']
     Handle Alert    ACCEPT            # closing the alert by clicking ok
