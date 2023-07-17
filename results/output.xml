@@ -1,106 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230710 17:47:30.628" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230717 12:25:21.419" rpa="false" schemaversion="3">
 <suite id="s1" name="Robotvscode" source="D:\Web Automation using Robot Framework\robotvscode">
 <suite id="s1-s1" name="Test Cases" source="D:\Web Automation using Robot Framework\robotvscode\test_cases">
-<suite id="s1-s1-s1" name="ImplicitWaitTest" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\ImplicitWaitTest.robot">
-<test id="s1-s1-s1-t1" name="Test speed" line="15">
+<suite id="s1-s1-s1" name="closeAll" source="D:\Web Automation using Robot Framework\robotvscode\test_cases\closeAll.robot">
+<test id="s1-s1-s1-t1" name="Testing Closing All" line="15">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
+<arg>${url1}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230710 17:47:31.106" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
-<status status="PASS" starttime="20230710 17:47:31.106" endtime="20230710 17:47:34.830"/>
+<msg timestamp="20230717 12:25:21.801" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20230717 12:25:21.801" endtime="20230717 12:25:27.492"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230710 17:47:34.838" endtime="20230710 17:47:34.955"/>
+<status status="PASS" starttime="20230717 12:25:27.492" endtime="20230717 12:25:27.622"/>
 </kw>
-<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
-<var>${implicittime}</var>
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<msg timestamp="20230710 17:47:34.955" level="INFO">${implicittime} = 0 seconds</msg>
-<status status="PASS" starttime="20230710 17:47:34.955" endtime="20230710 17:47:34.955"/>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230717 12:25:27.622" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<status status="PASS" starttime="20230717 12:25:27.622" endtime="20230717 12:25:33.421"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${implicittime}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230710 17:47:34.961" endtime="20230710 17:47:34.961"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230717 12:25:33.421" endtime="20230717 12:25:33.551"/>
 </kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>10seconds</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230710 17:47:34.961" endtime="20230710 17:47:34.961"/>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url3}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230717 12:25:33.559" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20230717 12:25:33.551" endtime="20230717 12:25:38.101"/>
 </kw>
-<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
-<var>${implicittime}</var>
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<msg timestamp="20230710 17:47:34.969" level="INFO">${implicittime} = 10 seconds</msg>
-<status status="PASS" starttime="20230710 17:47:34.969" endtime="20230710 17:47:34.969"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230717 12:25:38.101" endtime="20230717 12:25:38.214"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${implicittime}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230710 17:47:34.969" endtime="20230710 17:47:34.969"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230717 12:25:38.214" endtime="20230717 12:25:40.361"/>
 </kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>Gender</arg>
-<arg>M</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20230710 17:47:34.978" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
-<status status="PASS" starttime="20230710 17:47:34.978" endtime="20230710 17:47:35.109"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230717 12:25:43.365" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230717 12:25:40.361" endtime="20230717 12:25:43.365"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:FirstName</arg>
-<arg>ttpvt</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230710 17:47:35.117" level="INFO">Typing text 'ttpvt' into text field 'id:FirstName'.</msg>
-<status status="PASS" starttime="20230710 17:47:35.109" endtime="20230710 17:47:35.289"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230717 12:25:43.365" endtime="20230717 12:25:55.745"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:LastName</arg>
-<arg>gokul</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230710 17:47:35.289" level="INFO">Typing text 'gokul' into text field 'id:LastName'.</msg>
-<status status="PASS" starttime="20230710 17:47:35.289" endtime="20230710 17:47:35.444"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Email</arg>
-<arg>ttpvt_gd01@yopmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230710 17:47:35.453" level="INFO">Typing text 'ttpvt_gd01@yopmail.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20230710 17:47:35.453" endtime="20230710 17:47:35.632"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>Ttpvt_gd01@yopmail.com</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230710 17:47:35.641" level="INFO">Typing password into text field 'id:Password'.</msg>
-<msg timestamp="20230710 17:47:35.697" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230710 17:47:35.820" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230710 17:47:35.641" endtime="20230710 17:47:35.820"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id:ConfirmPassword</arg>
-<arg>Ttpvt_gd01@yopmail.com</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20230710 17:47:35.828" level="INFO">Typing password into text field 'id:ConfirmPassword'.</msg>
-<msg timestamp="20230710 17:47:35.886" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20230710 17:47:36.000" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20230710 17:47:35.820" endtime="20230710 17:47:36.000"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>id:register-button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230710 17:47:36.008" level="INFO">Clicking button 'id:register-button'.</msg>
-<status status="PASS" starttime="20230710 17:47:36.000" endtime="20230710 17:47:36.761"/>
-</kw>
-<status status="PASS" starttime="20230710 17:47:31.106" endtime="20230710 17:47:36.761"/>
+<status status="PASS" starttime="20230717 12:25:21.801" endtime="20230717 12:25:55.745"/>
 </test>
-<status status="PASS" starttime="20230710 17:47:30.693" endtime="20230710 17:47:36.769"/>
+<status status="PASS" starttime="20230717 12:25:21.467" endtime="20230717 12:25:55.745"/>
 </suite>
-<status status="PASS" starttime="20230710 17:47:30.693" endtime="20230710 17:47:36.777"/>
+<status status="PASS" starttime="20230717 12:25:21.459" endtime="20230717 12:25:55.753"/>
 </suite>
-<status status="PASS" starttime="20230710 17:47:30.644" endtime="20230710 17:47:36.777"/>
+<status status="PASS" starttime="20230717 12:25:21.427" endtime="20230717 12:25:55.753"/>
 </suite>
 <statistics>
 <total>
@@ -111,7 +68,7 @@
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Robotvscode">Robotvscode</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Cases">Robotvscode.Test Cases</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="ImplicitWaitTest">Robotvscode.Test Cases.ImplicitWaitTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="closeAll">Robotvscode.Test Cases.closeAll</stat>
 </suite>
 </statistics>
 <errors>
